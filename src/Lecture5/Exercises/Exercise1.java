@@ -1,43 +1,29 @@
 package Lecture5.Exercises;
 
 public class Exercise1 {
-
-    public static void main(String[] args) {
-        //forExercise();
-        foreachExercise();
+    public static void main(String[] args){
+        forExcercise();
+        forEachExcersise();
     }
-    public static void forExercise(){
-        int[] numbers = {2,23,512,26,845,97};
-
-        int biggestNumber=0;
-
-        for(int i=0;i<numbers.length; i++){
-            System.out.println("Current number is: "+numbers[i]);
-            if (i==0) {
-                System.out.println("One time only: " + numbers[i]);
-                biggestNumber = numbers[i];
-                continue;
+    public static void forExcercise(){
+        int[] numbers = {2, 7, 3, 12, 4, 8}; // Array of numbers.
+        int largestNumber = numbers[0]; // Assume the first number is the largest.
+        for (int i=0; i < numbers.length; i++){ // For loop go through each number.
+            if (numbers[i] > largestNumber){ // Check if the current number is larger than the current largest.
+                largestNumber = numbers[i]; // Update the largest number.
             }
-            if (biggestNumber < numbers[i]){
-                System.out.println("Compare, biggestNumber: "+biggestNumber+"; currentNumber: "+numbers[i]);
-                biggestNumber=numbers[i];
-            }
+
         }
-        System.out.println(biggestNumber);
+        System.out.println("Largest number is: " +largestNumber);
     }
-    public static void foreachExercise(){
-        int[] numbers = {2,23,512,26,845,97};
-
-        int biggestNumber=numbers[0];
-
-        for(int number:numbers){
-            System.out.println("Current biggest number is: "+biggestNumber);
-            System.out.println("Current number is: "+number);
-            if (biggestNumber < number){
-                System.out.println("Compare, biggestNumber: "+biggestNumber+"; currentNumber: "+number);
-                biggestNumber=number;
-            }
+    public static void forEachExcersise(){
+        int[] numbers = {9, 7, 5, 1, 8}; // Array of numbers.
+        int largestNumber = numbers[0]; // Assume the first number is the largest.
+        for (int number:numbers) { // For-each loop go through each number.
+            System.out.println("Current largest number is: " +number);
+            if (number > largestNumber); // Compare each number to the current larges.
+            largestNumber = number; // Update the largest number.
         }
-        System.out.println(biggestNumber);
+        System.out.println("Largest number is: " +largestNumber);
     }
 }
