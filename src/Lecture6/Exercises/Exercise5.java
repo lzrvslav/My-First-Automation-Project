@@ -11,8 +11,8 @@ public class Exercise5 {
 
         ArrayList<String> tasks = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-
-        while (true) {
+        boolean activeMenu = true;
+        while (activeMenu) {
             System.out.println("1. Add a new task.");
             System.out.println("2. Mark a task as completed.");
             System.out.println("3. Remove completed tasks.");
@@ -70,14 +70,13 @@ public class Exercise5 {
                         }
                     }
                     System.out.println(" ");
-                    break;
 
                 case 5:
                     System.out.println(" ");
                     System.out.println("To-Do- List closed!");
                     scanner.close();
                     System.out.println(" ");
-                    return;
+                    activeMenu=true;
 
                 default:
                     System.out.println(" ");

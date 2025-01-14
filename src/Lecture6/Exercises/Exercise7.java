@@ -10,8 +10,8 @@ public class Exercise7 {
     public static void contactList() {
         LinkedList<String> contacts = new LinkedList<>();
         Scanner scanner = new Scanner(System.in);
-
-        while (true) {
+        boolean activeMenu = true;
+        while (activeMenu) {
             System.out.println("1. Add Contact");
             System.out.println("2. View Contacts");
             System.out.println("3. Remove Contact");
@@ -59,7 +59,7 @@ public class Exercise7 {
 
                 case 4:
                     System.out.println("Contact list closed!");
-                    return;
+                    activeMenu=false;
 
                 default:
                     System.out.println("Invalid choice. Please try again.");
