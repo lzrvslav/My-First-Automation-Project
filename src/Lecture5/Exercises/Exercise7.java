@@ -7,7 +7,6 @@ public class Exercise7 {
         javaGame();
     }
     public static void javaGame(){
-
         System.out.println("This Java program generates a random number!");
         System.out.println("Guess the number by entering a value between 1 and 100: ");
         Scanner scanner = new Scanner(System.in);

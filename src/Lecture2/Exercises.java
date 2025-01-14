@@ -2,7 +2,7 @@ package Lecture2;
 
 import java.util.Scanner;
 
-public class Exercoses {
+public class Exercises {
     public static void main(String[] args) {
         //exercise1();
         //exercise2();
