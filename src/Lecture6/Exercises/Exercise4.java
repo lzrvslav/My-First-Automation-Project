@@ -2,7 +2,6 @@ package Lecture6.Exercises;
 
 public class Exercise4 {
     public static void main(String[] args){
-        findingBiggestElement();
     }
     public static void findingBiggestElement(){
             int[] numbers = {1, 2, 3, 4, 5, 1}; // Array of numbers.

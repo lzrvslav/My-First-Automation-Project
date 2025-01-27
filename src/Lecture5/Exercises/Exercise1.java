@@ -6,7 +6,7 @@ public class Exercise1 {
         forEachExcersise();
     }
     public static void forExcercise(){
-        int[] numbers = {1, 2, 3, 4, 5, 1}; // Array of numbers.
+        int[] numbers = {1, 2, 3, 4, 5, 6}; // Array of numbers.
         int largestNumber = numbers[0]; // Assume the first number is the largest.
         for (int i=0; i < numbers.length; i++){ // For loop go through each number.
             if (numbers[i] > largestNumber){ // Check if the current number is larger than the current largest.

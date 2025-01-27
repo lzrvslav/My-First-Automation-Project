@@ -6,6 +6,5 @@ public class Excercise1 {
     }
     private static void findSmallestNumber(int a, int b, int c) {
         System.out.println("The smallest number is: " + Math.min(a, Math.min(b, c)));
-
     }
 }
