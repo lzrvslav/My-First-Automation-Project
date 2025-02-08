@@ -2,6 +2,7 @@ package Lecture11.Polymorphism;
 
 public class Vehicle {
     // Contractor has the same name as the Class and accepts some parameters.
+    // Passing data to the constructor when creating a new object, with each value being written to the corresponding field of the object.
     public Vehicle(String brand, int maxSpeed, int price){
         // Keyword 'this' refers directly to the variable that is inside as a field or property
         // (this.brand = brand;) refers directly to (public String brand;)
